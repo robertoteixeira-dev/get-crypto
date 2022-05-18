@@ -16,7 +16,6 @@ function App() {
     <Earn />
     <Contact />
     <Footer />
-    
     </>
   );
 }

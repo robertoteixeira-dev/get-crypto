@@ -28,6 +28,40 @@
     align-self: flex-start;
 }
 
+.featured .left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.featured .left .card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    margin: .4rem;
+    width: 170px;
+    height: 170px;
+    border-radius: 24px;
+    border: 1px solid #d3d3d3;
+    box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+    text-align: center;
+}
+
+.featured .left .card:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+}
+
+.featured .left img {
+    width: 50px;
+    margin: auto;
+    padding: .2rem 0;
+}
+
+.featured .card .top {
+    display: flex;
+    flex-direction: column;
+}
+
 .green {
     color: var(--primary);
 }
@@ -36,6 +70,36 @@
     color: #ff0000;
 }
 
+.featured .card .icon {
+    font-size: 28px;
+    margin: auto;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.featured span {
+    font-size: 18px;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 940px) {
+    .featured .container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .right .btn {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .featured .container .left .card {
+        width: 100%;
+    }
+}
 
 /* 
 bennettfeely - to create shapes
