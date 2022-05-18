@@ -1,0 +1,47 @@
+.home .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.5rem auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.home .left {
+    padding: 1rem;
+}
+
+.home h1 {
+    padding: 1rem 0;
+}
+
+.home .input-container {
+    padding: 1rem 0;
+}
+
+.home .right {
+    padding: 1rem;
+}
+
+.home .img-container {
+    width: 100%;
+    display: flex;
+}
+
+.home img {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:600px) {
+    .home .container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+}
+
+
+
