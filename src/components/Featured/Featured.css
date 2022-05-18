@@ -1,10 +1,45 @@
+.featured {
+    width: 100%;
+    padding: 8rem 0;
+    background-color: var(--background);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+
+.featured .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.featured .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.featured .right p {
+    margin: 1.5rem 0;
+}
+
+.featured .right .btn {
+    align-self: flex-start;
+}
+
+.green {
+    color: var(--primary);
+}
+
+.red {
+    color: #ff0000;
+}
 
 
-
-
-
-
-
+/* 
+bennettfeely - to create shapes
+*/
 
 
 
